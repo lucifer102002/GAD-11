@@ -1,0 +1,23 @@
+Public Class Form1 
+Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 
+Dim dynamicPanel As New Panel() 
+dynamicPanel.Name = "Panel1" 
+dynamicPanel.Size = New System.Drawing.Size(228, 200) 
+dynamicPanel.BackColor = Color.Pink 
+Dim textBox1 As New TextBox() 
+textBox1.Location = New Point(10, 10) 
+textBox1.Text = "Enter Your Name" 
+Dim checkBox1 As New CheckBox() 
+checkBox1.Location = New Point(10, 50) 
+checkBox1.Text = "Male" 
+checkBox1.Size = New Size(200, 30) 
+Dim checkBox2 As New CheckBox() 
+checkBox2.Location = New Point(10, 90) 
+checkBox2.Text = "Male" 
+checkBox2.Size = New Size(200, 30) 
+dynamicPanel.Controls.Add(textBox1)
+dynamicPanel.Controls.Add(checkBox1) 
+dynamicPanel.Controls.Add(checkBox2) 
+Controls.Add(dynamicPanel) 
+End Sub 
+End Class 
